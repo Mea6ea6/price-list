@@ -84,12 +84,6 @@
     justify-content: space-between;
     flex-direction: column;
 }
-.card:hover .card__title {
-    text-decoration: underline;
-}
-.card:hover .card__price-span {
-    display: block;
-}
 .card__title {
     font-family: var(--title-font);
     font-weight: 600;
@@ -186,6 +180,12 @@
 }
 
 @media (hover: hover) {
+    .card:hover .card__title {
+        text-decoration: underline;
+    }
+    .card:hover .card__price-span {
+        display: block;
+    }
     .footer__link:hover::after {
         opacity: 1;
         bottom: -2px;
@@ -193,6 +193,12 @@
 }
 
 @media (hover: none) {
+    .card:hover .card__title {
+        text-decoration: underline;
+    }
+    .card:hover .card__price-span {
+        display: block;
+    }
     .footer__link:hover::after {
         opacity: 1;
         bottom: -2px;
